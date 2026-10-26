@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Appointment Confirmed - SmartCare</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SmartCare
+        </div>
+
+        <div class="nav-text">
+            Doctor Appointment System
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>
+                Appointment Booked Successfully!
+            </h1>
+
+            <p class="success-message">
+                Your appointment details have been
+                successfully submitted.
+            </p>
+
+
+            <div class="appointment-details">
+
+                <h2>
+                    Appointment Details
+                </h2>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Patient Name:
+                    </strong>
+
+                    <span>
+                        <%= appointment.name %>
+                    </span>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Email:
+                    </strong>
+
+                    <span>
+                        <%= appointment.email %>
+                    </span>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Phone:
+                    </strong>
+
+                    <span>
+                        <%= appointment.phone %>
+                    </span>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Age:
+                    </strong>
+
+                    <span>
+                        <%= appointment.age %>
+                    </span>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Department:
+                    </strong>
+
+                    <span>
+                        <%= appointment.department %>
+                    </span>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Appointment Date:
+                    </strong>
+
+                    <span>
+                        <%= appointment.appointmentDate %>
+                    </span>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <strong>
+                        Reason:
+                    </strong>
+
+                    <span>
+                        <%= appointment.reason %>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="/" class="back-link">
+
+                <button class="submit-btn">
+                    Book Another Appointment
+                </button>
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 SmartCare | Express.js Server-Side Validation
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
